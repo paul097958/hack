@@ -1,0 +1,19 @@
+<html>
+   <head>
+      <title>hello</title>
+   </head>
+   <body>
+      <button id="btn">
+          lll
+      </button>
+      <script>
+         let btn = document.getElementById('btn')
+         btn.addEventListener('click', async ()=>{
+            console.log('hello')
+            let res = await fetch('http://127.0.0.1:3030')
+            let data = await res.text()
+            console.log(data)
+         })
+      </script>
+   </body>
+</html>
